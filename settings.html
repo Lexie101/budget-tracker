@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Budget Tracker - Settings</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html">Overview</a>
+    <a href="transactions.html">Transactions</a>
+    <a href="reports.html">Reports</a>
+    <a href="settings.html">Settings</a>
+  </nav>
+
+  <main>
+    <h1>Settings</h1>
+    <button onclick="exportData()">Export Data</button>
+    <input type="file" id="import-file">
+    <button onclick="importData()">Import Data</button>
+    <button onclick="resetData()">Reset All</button>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

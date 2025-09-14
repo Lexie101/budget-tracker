@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Budget Tracker - Reports</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Overview</a>
+    <a href="transactions.html">Transactions</a>
+    <a href="reports.html">Reports</a>
+    <a href="settings.html">Settings</a>
+  </nav>
+
+  <main>
+    <h1>Statement</h1>
+
+    <div class="card">
+      <h2 id="report-month">August 2025</h2>
+      <h3>Total: <span id="report-total">ZMW 0.00</span></h3>
+      <canvas id="category-chart"></canvas>
+    </div>
+
+    <div class="card totals-row">
+      <div>
+        <h3>Spent</h3>
+        <p id="report-expenses">ZMW 0.00</p>
+      </div>
+      <div>
+        <h3>Earned</h3>
+        <p id="report-income">ZMW 0.00</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Breakdown</h2>
+      <div id="category-breakdown"></div>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

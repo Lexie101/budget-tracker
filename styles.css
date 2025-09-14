@@ -1,0 +1,145 @@
+/* General Reset */
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #1e1b3a; /* Dark purple background */
+  color: #fff;
+}
+
+/* Navbar */
+nav {
+  background: #2a2550;
+  padding: 12px;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #4cc9f0;
+}
+
+/* Main Layout */
+main {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Headings */
+h1, h2 {
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+/* Cards */
+.card {
+  background: #2a2550;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+/* Totals */
+#totals {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: #2a2550;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+#totals p {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+/* Chart Styling */
+canvas {
+  margin: 20px auto;
+  max-width: 400px;
+}
+
+/* Transaction List */
+#transactions-container div {
+  background: #2a2550;
+  padding: 10px 15px;
+  margin: 8px 0;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#transactions-container button {
+  background: none;
+  border: none;
+  color: #f72585;
+  cursor: pointer;
+}
+
+#transactions-container button:hover {
+  color: #ff4d6d;
+}
+
+/* Form Styling */
+form input, form select, form button {
+  margin: 8px;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+}
+
+form input, form select {
+  flex: 1;
+  background: #f8f9fa;
+  color: #333;
+}
+
+form button {
+  background: #4361ee;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #3a0ca3;
+}
+
+.totals-row {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.totals-row div {
+  flex: 1;
+  margin: 10px;
+}
+
+#category-breakdown div {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+  padding: 8px;
+  background: #2a2550;
+  border-radius: 8px;
+}
+
+#category-breakdown span {
+  font-weight: bold;
+}
+#category-breakdown .amount {
+  color: #4cc9f0;
+}
